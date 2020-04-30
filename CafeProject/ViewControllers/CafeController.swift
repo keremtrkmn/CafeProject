@@ -23,8 +23,16 @@ class CafeController: UIViewController {
         
         let nib = UINib(nibName: "CafeListCell", bundle: nil)
         cafeList.register(nib, forCellWithReuseIdentifier: "CafeListCell")
-        
+
+        prepareBar()
         createCafeList()
+    }
+    
+    func prepareBar() {
+        let image = UIImage(named: "back_button")
+        navigationController?.navigationBar.backIndicatorImage = image
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = image
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
 
     func createCafeList() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FgS-uC-C6V">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ojK-4p-lgg">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" red="0.73223322629999998" green="0.68298012019999998" blue="0.63920837639999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1fC-KN-6uG">
                                     <size key="itemSize" width="196" height="185"/>
@@ -43,12 +43,12 @@
                     <navigationItem key="navigationItem" id="0qQ-Xx-0gf"/>
                     <connections>
                         <outlet property="cafeList" destination="ojK-4p-lgg" id="Kuq-uU-6IO"/>
-                        <segue destination="z62-5R-CW0" kind="presentation" identifier="toDetails" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="WTN-ZR-IdE"/>
+                        <segue destination="z62-5R-CW0" kind="show" identifier="toDetails" id="WTN-ZR-IdE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
         </scene>
         <!--Cafe Detail Controller-->
         <scene sceneID="vxy-Vu-oxk">
@@ -109,19 +109,11 @@
                                 <rect key="frame" x="22" y="526" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8Y-iT-cwM">
-                                <rect key="frame" x="12" y="44" width="45" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" image="back_button"/>
-                                <connections>
-                                    <action selector="backButtonClicked:" destination="z62-5R-CW0" eventType="touchUpInside" id="5Cd-ry-Ec1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.73223322629999998" green="0.68298012019999998" blue="0.63920837639999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="m7A-Kq-xLX"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Bpq-nv-oS4"/>
                     <connections>
                         <outlet property="detailCafeAddress" destination="vcN-s0-818" id="TCK-yN-tsg"/>
                         <outlet property="detailCafeLocation" destination="rOo-RZ-5Xn" id="LEQ-dl-cIp"/>
@@ -129,16 +121,32 @@
                         <outlet property="detailCafePage" destination="g7U-OX-nhy" id="iiI-KB-QHO"/>
                         <outlet property="detailImageView" destination="tTF-cd-7tq" id="Max-ue-oV3"/>
                         <outlet property="detailWorkingHours" destination="fbc-Dk-Bqr" id="xn2-eD-HcU"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toCafeList" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Q2q-Z8-URq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2r-QX-ua7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111.5942028985507" y="114.50892857142857"/>
+            <point key="canvasLocation" x="2021.7391304347827" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IS1-BL-plw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FgS-uC-C6V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Qt-Jq-do5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gpD-Kx-5R4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSo-ZL-kVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>
-        <image name="back_button" width="24" height="24"/>
         <image name="hours_icon" width="24" height="24"/>
         <image name="location_icon" width="24" height="24"/>
         <image name="website_icon" width="22" height="22"/>
