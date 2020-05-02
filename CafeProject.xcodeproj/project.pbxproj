@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B38D72372459B4ED00E9FB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D72362459B4ED00E9FB89 /* AppDelegate.swift */; };
-		B38D72392459B4ED00E9FB89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D72382459B4ED00E9FB89 /* SceneDelegate.swift */; };
 		B38D723B2459B4ED00E9FB89 /* CafeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D723A2459B4ED00E9FB89 /* CafeController.swift */; };
 		B38D723E2459B4ED00E9FB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38D723C2459B4ED00E9FB89 /* Main.storyboard */; };
 		B38D72402459B4EE00E9FB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38D723F2459B4EE00E9FB89 /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		B38D72332459B4ED00E9FB89 /* CafeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38D72362459B4ED00E9FB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B38D72382459B4ED00E9FB89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B38D723A2459B4ED00E9FB89 /* CafeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeController.swift; sourceTree = "<group>"; };
 		B38D723D2459B4ED00E9FB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B38D723F2459B4EE00E9FB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				B38D72362459B4ED00E9FB89 /* AppDelegate.swift */,
-				B38D72382459B4ED00E9FB89 /* SceneDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -308,7 +305,6 @@
 				B38D723B2459B4ED00E9FB89 /* CafeController.swift in Sources */,
 				B38D72372459B4ED00E9FB89 /* AppDelegate.swift in Sources */,
 				B39E76CA245A1350004C2DFC /* CafeDetailController.swift in Sources */,
-				B38D72392459B4ED00E9FB89 /* SceneDelegate.swift in Sources */,
 				B39E76A12459E4AB004C2DFC /* CafeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQ7V2A57P7;
 				INFOPLIST_FILE = CafeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = appendix.CafeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -503,6 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQ7V2A57P7;
 				INFOPLIST_FILE = CafeProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = appendix.CafeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

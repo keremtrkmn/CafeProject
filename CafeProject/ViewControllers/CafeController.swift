@@ -72,22 +72,21 @@ extension CafeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return cafeListArray.count
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
-        let inset = 40
-        return UIEdgeInsets(top: CGFloat(inset), left: CGFloat(inset), bottom: CGFloat(inset), right: CGFloat(inset))
-    }
+//    func collectionView(_ collectionView: UICollectionView,
+//                        layout collectionViewLayout: UICollectionViewLayout,
+//                        insetForSectionAt section: Int) -> UIEdgeInsets {
+//        let inset = 40
+//        return UIEdgeInsets(top: CGFloat(inset), left: CGFloat(inset), bottom: CGFloat(inset), right: CGFloat(inset))
+//    }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: 145, height: 183)
+        return CGSize.init(width: (self.cafeList.frame.width / 2), height: self.cafeList.frame.width / 2 )
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let layout = cafeList.collectionViewLayout as? UICollectionViewFlowLayout
-        layout?.minimumLineSpacing = 35
         collectionView.collectionViewLayout = layout!
         let cell = cafeList.dequeueReusableCell(withReuseIdentifier: "CafeListCell", for: indexPath) as! CafeListCell
         let cafe = cafeListArray[indexPath.row]
