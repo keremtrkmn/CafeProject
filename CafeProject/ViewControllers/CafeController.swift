@@ -82,7 +82,7 @@ extension CafeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: (self.cafeList.frame.width / 2), height: self.cafeList.frame.width / 2 )
+        return CGSize.init(width: (self.cafeList.frame.width / 2) - 16 , height: (self.cafeList.frame.width / 2) + 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

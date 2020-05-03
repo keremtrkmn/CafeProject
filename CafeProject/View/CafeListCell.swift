@@ -19,9 +19,9 @@ class CafeListCell: UICollectionViewCell {
     
     func prepareCell(cafe: Cafe) {
         layer.cornerRadius = 25
-        cafeImage.layer.borderWidth = 3
+        cafeImage.layer.masksToBounds = false
         cafeImage.layer.borderColor = UIColor(red: 0.365, green: 0.263, blue: 0.216, alpha: 1).cgColor
-        cafeImage.layer.cornerRadius = cafeImage.frame.height / 2
+//        cafeImage.layer.cornerRadius = innerView.frame.size.width / 5
         innerView.layer.cornerRadius = 24
         cafeImage.clipsToBounds = true
         cafeImage.image = UIImage(named: cafe.cafeLogo)

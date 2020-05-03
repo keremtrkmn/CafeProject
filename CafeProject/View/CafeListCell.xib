@@ -29,7 +29,7 @@
                                 <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AU5-1g-179">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gronLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AU5-1g-179">
                                 <rect key="frame" x="24" y="32" width="97" height="119"/>
                             </imageView>
                         </subviews>
@@ -38,6 +38,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="AU5-1g-179" secondAttribute="bottom" constant="32" id="3qE-f2-EWz"/>
                             <constraint firstAttribute="bottom" secondItem="7gM-3v-95w" secondAttribute="bottom" constant="8" id="HLW-Qp-m6M"/>
+                            <constraint firstItem="AU5-1g-179" firstAttribute="height" secondItem="4gg-a4-auT" secondAttribute="height" multiplier="0.650273" id="KmY-jx-nYb"/>
                             <constraint firstAttribute="trailing" secondItem="7gM-3v-95w" secondAttribute="trailing" constant="8" id="MgK-WR-eTv"/>
                             <constraint firstItem="AU5-1g-179" firstAttribute="leading" secondItem="4gg-a4-auT" secondAttribute="leading" constant="24" id="e29-ly-Gnd"/>
                             <constraint firstAttribute="trailing" secondItem="AU5-1g-179" secondAttribute="trailing" constant="24" id="gSn-4S-o5j"/>
@@ -70,5 +71,6 @@
     </objects>
     <resources>
         <image name="background" width="145" height="77"/>
+        <image name="gronLogo" width="111" height="109"/>
     </resources>
 </document>
