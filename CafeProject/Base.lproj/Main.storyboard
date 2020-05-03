@@ -204,7 +204,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m7A-Kq-xLX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bpq-nv-oS4"/>
+                    <navigationItem key="navigationItem" id="Bpq-nv-oS4">
+                        <barButtonItem key="backBarButtonItem" title=" " id="HHz-Vz-PX5"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailCafeAddress" destination="vcN-s0-818" id="TCK-yN-tsg"/>
                         <outlet property="detailCafeLocation" destination="rOo-RZ-5Xn" id="LEQ-dl-cIp"/>
@@ -212,11 +214,58 @@
                         <outlet property="detailCafePage" destination="D4B-f4-G2y" id="BXl-05-M1r"/>
                         <outlet property="detailImageView" destination="tTF-cd-7tq" id="Max-ue-oV3"/>
                         <outlet property="detailWorkingHours" destination="nsy-gu-sKc" id="d4w-tU-Q1b"/>
+                        <segue destination="8BI-hT-d9n" kind="show" identifier="toWebView" id="abQ-ue-Hd8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2r-QX-ua7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2021.7391304347827" y="114.50892857142857"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="hyv-vV-xkT">
+            <objects>
+                <viewController id="8BI-hT-d9n" customClass="WebViewController" customModule="CafeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kdu-ka-Qmo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQe-yJ-8Nu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayfa yuklenemedi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMs-Fz-MFE">
+                                <rect key="frame" x="101.33333333333333" y="432.33333333333331" width="211.33333333333337" height="31.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="VvE-nt-lgb">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VvE-nt-lgb" firstAttribute="centerY" secondItem="Kdu-ka-Qmo" secondAttribute="centerY" id="27I-BH-xma"/>
+                            <constraint firstItem="jQe-yJ-8Nu" firstAttribute="top" secondItem="MN8-Mz-wcv" secondAttribute="top" id="BPM-96-xsq"/>
+                            <constraint firstItem="VvE-nt-lgb" firstAttribute="centerX" secondItem="Kdu-ka-Qmo" secondAttribute="centerX" id="EwJ-CB-Fzy"/>
+                            <constraint firstItem="IMs-Fz-MFE" firstAttribute="centerX" secondItem="Kdu-ka-Qmo" secondAttribute="centerX" id="G1W-2e-s8M"/>
+                            <constraint firstItem="jQe-yJ-8Nu" firstAttribute="leading" secondItem="MN8-Mz-wcv" secondAttribute="leading" id="PUn-qt-Ciw"/>
+                            <constraint firstItem="MN8-Mz-wcv" firstAttribute="trailing" secondItem="jQe-yJ-8Nu" secondAttribute="trailing" id="R5I-Mr-69m"/>
+                            <constraint firstItem="IMs-Fz-MFE" firstAttribute="centerY" secondItem="Kdu-ka-Qmo" secondAttribute="centerY" id="eAu-kr-Vur"/>
+                            <constraint firstItem="MN8-Mz-wcv" firstAttribute="bottom" secondItem="jQe-yJ-8Nu" secondAttribute="bottom" id="fRA-Xp-ukG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MN8-Mz-wcv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WHY-wR-hDP"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="IMs-Fz-MFE" id="KhJ-f3-bgn"/>
+                        <outlet property="loadSpinner" destination="VvE-nt-lgb" id="XB0-Qb-FnY"/>
+                        <outlet property="webView" destination="jQe-yJ-8Nu" id="WmF-eL-rXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYK-zS-MmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3044.9275362318845" y="114.50892857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IS1-BL-plw">

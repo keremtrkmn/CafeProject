@@ -26,7 +26,21 @@ class CafeDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        detailCafePage.isUserInteractionEnabled = true
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(clickToPage))
+        detailCafePage.addGestureRecognizer(gestureRecognizer)
+        
         prepareDetail()
+    }
+    @objc func clickToPage() {
+        performSegue(withIdentifier: "toWebView", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toWebView" {
+            let destinationVC = segue.destination as! WebViewController
+            destinationVC.webUrl = detailCafePage.text!
+        }
     }
     
     func prepareDetail() {
