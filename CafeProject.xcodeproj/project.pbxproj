@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B32BB0A4245F4241004623B0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32BB0A3245F4241004623B0 /* WebViewController.swift */; };
+		B330BEEE2460CCB600BA18FA /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330BEED2460CCB600BA18FA /* PrimaryLabel.swift */; };
+		B330BEF02460CCC000BA18FA /* SecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330BEEF2460CCC000BA18FA /* SecondaryLabel.swift */; };
+		B330BEF42460CE4C00BA18FA /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B330BEF22460CE4C00BA18FA /* Montserrat-Bold.ttf */; };
+		B330BEF52460CE4C00BA18FA /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B330BEF32460CE4C00BA18FA /* Montserrat-Regular.ttf */; };
 		B38D72372459B4ED00E9FB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D72362459B4ED00E9FB89 /* AppDelegate.swift */; };
 		B38D723B2459B4ED00E9FB89 /* CafeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D723A2459B4ED00E9FB89 /* CafeController.swift */; };
 		B38D723E2459B4ED00E9FB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38D723C2459B4ED00E9FB89 /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		B32BB0A3245F4241004623B0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B330BEED2460CCB600BA18FA /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
+		B330BEEF2460CCC000BA18FA /* SecondaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryLabel.swift; sourceTree = "<group>"; };
+		B330BEF22460CE4C00BA18FA /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		B330BEF32460CE4C00BA18FA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		B38D72332459B4ED00E9FB89 /* CafeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38D72362459B4ED00E9FB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B38D723A2459B4ED00E9FB89 /* CafeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B330BEEB2460CC6B00BA18FA /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				B330BEED2460CCB600BA18FA /* PrimaryLabel.swift */,
+				B330BEEF2460CCC000BA18FA /* SecondaryLabel.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		B330BEF12460CE0200BA18FA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B330BEF22460CE4C00BA18FA /* Montserrat-Bold.ttf */,
+				B330BEF32460CE4C00BA18FA /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B38D722A2459B4ED00E9FB89 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +133,8 @@
 		B38D72352459B4ED00E9FB89 /* CafeProject */ = {
 			isa = PBXGroup;
 			children = (
+				B330BEF12460CE0200BA18FA /* Fonts */,
+				B330BEEB2460CC6B00BA18FA /* Controls */,
 				B38D72692459B52D00E9FB89 /* Delegate */,
 				B38D72672459B50900E9FB89 /* Model */,
 				B38D72682459B52600E9FB89 /* ViewControllers */,
@@ -276,6 +304,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B330BEF52460CE4C00BA18FA /* Montserrat-Regular.ttf in Resources */,
+				B330BEF42460CE4C00BA18FA /* Montserrat-Bold.ttf in Resources */,
 				B39E769D2459B728004C2DFC /* CafeListCell.xib in Resources */,
 				B38D72432459B4EE00E9FB89 /* LaunchScreen.storyboard in Resources */,
 				B38D72402459B4EE00E9FB89 /* Assets.xcassets in Resources */,
@@ -310,6 +340,8 @@
 				B38D72372459B4ED00E9FB89 /* AppDelegate.swift in Sources */,
 				B39E76CA245A1350004C2DFC /* CafeDetailController.swift in Sources */,
 				B39E76A12459E4AB004C2DFC /* CafeModel.swift in Sources */,
+				B330BEEE2460CCB600BA18FA /* PrimaryLabel.swift in Sources */,
+				B330BEF02460CCC000BA18FA /* SecondaryLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
