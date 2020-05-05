@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CafeController: UIViewController {
+class CafeController: UIViewController{
     
     //MARK: Outlets
     
@@ -17,10 +17,11 @@ class CafeController: UIViewController {
     //MARK: Properties
     
     var cafeListArray = [Cafe]()
+    var searchBar = UISearchBar()
+    var dataArray = [Cafe]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let nib = UINib(nibName: "CafeListCell", bundle: nil)
         cafeList.register(nib, forCellWithReuseIdentifier: "CafeListCell")
 
@@ -29,10 +30,16 @@ class CafeController: UIViewController {
     }
     
     func prepareBar() {
-        let image = UIImage(named: "back_button")
-        navigationController?.navigationBar.backIndicatorImage = image
-        navigationController?.navigationBar.backIndicatorTransitionMaskImage = image
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(prepareSearchbar))
+        navigationItem.titleView = searchBar
+        navigationItem.titleView?.isHidden = true
+    }
+    
+    @objc func prepareSearchbar() {
+        navigationItem.titleView?.isHidden = false
+        searchBar.showsCancelButton = true
+        searchBar.delegate = self
+        searchBar.placeholder = "Search cafe.."
     }
 
     func createCafeList() {
@@ -48,6 +55,8 @@ class CafeController: UIViewController {
         cafeListArray.append(petra)
         let montag = Cafe(cafeLogo: "montagLogo", cafeName: "Montag", cafeLocation: "Montag / Nisantasi / Istanbul", cafeAddress: "Gayrettepe, Hoşsohbet Sokaği Selenium Residence D:Mağaza 1, 34349 Beşiktaş/İstanbul", cafePage: "www.montag.com", cafeWorkingHours: "Acilis: 09:00 Kapanis: 16:00", cafeDetail: "montagDetail")
         cafeListArray.append(montag)
+        
+        dataArray = cafeListArray
         
         cafeList.reloadData()
     }
@@ -69,15 +78,8 @@ extension CafeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cafeListArray.count
+        return dataArray.count
     }
-    
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        insetForSectionAt section: Int) -> UIEdgeInsets {
-//        let inset = 40
-//        return UIEdgeInsets(top: CGFloat(inset), left: CGFloat(inset), bottom: CGFloat(inset), right: CGFloat(inset))
-//    }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -89,12 +91,41 @@ extension CafeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let layout = cafeList.collectionViewLayout as? UICollectionViewFlowLayout
         collectionView.collectionViewLayout = layout!
         let cell = cafeList.dequeueReusableCell(withReuseIdentifier: "CafeListCell", for: indexPath) as! CafeListCell
-        let cafe = cafeListArray[indexPath.row]
+        let cafe = dataArray[indexPath.row]
         cell.prepareCell(cafe: cafe)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedCafe = cafeListArray[indexPath.row]
+        let selectedCafe = dataArray[indexPath.row]
         performSegue(withIdentifier: "toDetails", sender: selectedCafe)
+    }
+}
+
+extension CafeController: UISearchBarDelegate {
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        navigationItem.titleView?.isHidden = true
+        dataArray = cafeListArray
+        self.cafeList.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.dataArray.removeAll(keepingCapacity: false)
+        
+        if searchText.isEmpty == false {
+            
+            dataArray = cafeListArray
+            
+            let filteredData = cafeListArray.filter { $0.cafeName.replacingOccurrences(of: "", with: "").lowercased().contains(searchText.replacingOccurrences(of: "", with: "").lowercased()) }
+           
+            dataArray = filteredData
+            self.cafeList.reloadData()
+        }
+        
+        if searchText.isEmpty == true {
+            dataArray = cafeListArray
+            self.cafeList.reloadData()
+        }
+        
     }
 }

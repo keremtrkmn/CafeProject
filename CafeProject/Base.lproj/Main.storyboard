@@ -64,11 +64,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tTF-cd-7tq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ODJ-gt-vcI">
-                                <rect key="frame" x="16" y="309" width="382" height="348.33333333333326"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ODJ-gt-vcI">
+                                <rect key="frame" x="16" y="309" width="382" height="246"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01i-e3-0t6">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="77"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01i-e3-0t6">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="76"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88I-hW-d8Q" customClass="PrimaryLabel" customModule="CafeProject" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="0.0" width="334" height="36"/>
@@ -101,17 +101,17 @@
                                             <constraint firstItem="88I-hW-d8Q" firstAttribute="top" secondItem="01i-e3-0t6" secondAttribute="top" id="psk-0m-QfG"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NO8-xm-ghS">
-                                        <rect key="frame" x="0.0" y="77" width="382" height="90"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NO8-xm-ghS">
+                                        <rect key="frame" x="0.0" y="76" width="382" height="90"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="location_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2Ww-C0-RdN">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="location_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2Ww-C0-RdN">
                                                 <rect key="frame" x="8" y="33" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="r2Q-TO-tcA"/>
                                                     <constraint firstAttribute="height" constant="24" id="xaB-xR-Yqt"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gayrettepe, Hoşsohbet Sokaği Selenium Residence D:Mağaza 1, 34349 Beşiktaş/İstanbul" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-s0-818" customClass="SecondaryLabel" customModule="CafeProject" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gayrettepe, Hoşsohbet Sokaği Selenium Residence D:Mağaza 1, 34349 Beşiktaş/İstanbul" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-s0-818" customClass="SecondaryLabel" customModule="CafeProject" customModuleProvider="target">
                                                 <rect key="frame" x="56" y="9.3333333333333144" width="318" height="71.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -127,18 +127,18 @@
                                             <constraint firstItem="vcN-s0-818" firstAttribute="centerY" secondItem="NO8-xm-ghS" secondAttribute="centerY" id="SkQ-cI-Wh0"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIr-Zh-my3">
-                                        <rect key="frame" x="0.0" y="167" width="382" height="91"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIr-Zh-my3">
+                                        <rect key="frame" x="0.0" y="166" width="382" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="website_icon" translatesAutoresizingMaskIntoConstraints="NO" id="nCs-5g-q2Q">
-                                                <rect key="frame" x="8" y="33.666666666666629" width="24" height="24"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="website_icon" translatesAutoresizingMaskIntoConstraints="NO" id="nCs-5g-q2Q">
+                                                <rect key="frame" x="8" y="8" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="9SV-ND-kck"/>
                                                     <constraint firstAttribute="height" constant="24" id="Uuh-Ji-fec"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="www.papcorns.com" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4B-f4-G2y" customClass="SecondaryLabel" customModule="CafeProject" customModuleProvider="target">
-                                                <rect key="frame" x="56" y="33.666666666666629" width="318" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.papcorns.com" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4B-f4-G2y" customClass="SecondaryLabel" customModule="CafeProject" customModuleProvider="target">
+                                                <rect key="frame" x="56" y="8" width="318" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -153,18 +153,18 @@
                                             <constraint firstItem="D4B-f4-G2y" firstAttribute="leading" secondItem="nCs-5g-q2Q" secondAttribute="trailing" constant="24" id="mAO-WU-8Ef"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4D-f5-rdf">
-                                        <rect key="frame" x="0.0" y="258" width="382" height="90.333333333333314"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4D-f5-rdf">
+                                        <rect key="frame" x="0.0" y="206" width="382" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="hours_icon" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-L0-PkQ">
-                                                <rect key="frame" x="8" y="33.333333333333371" width="24" height="24"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="hours_icon" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-L0-PkQ">
+                                                <rect key="frame" x="8" y="8" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="dPv-pv-3ry"/>
                                                     <constraint firstAttribute="width" constant="24" id="uPr-Fe-fa1"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Açılış: 09:00 Kapanış: 16:00" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsy-gu-sKc" customClass="SecondaryLabel" customModule="CafeProject" customModuleProvider="target">
-                                                <rect key="frame" x="56" y="33.333333333333371" width="318" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Açılış: 09:00 Kapanış: 16:00" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsy-gu-sKc" customClass="SecondaryLabel" customModule="CafeProject" customModuleProvider="target">
+                                                <rect key="frame" x="56" y="8" width="318" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>

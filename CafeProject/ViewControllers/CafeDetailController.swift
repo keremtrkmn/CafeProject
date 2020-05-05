@@ -52,9 +52,7 @@ class CafeDetailController: UIViewController {
         detailCafePage.text = cafe.cafePage
         detailWorkingHours.text = cafe.cafeWorkingHours
     }
-    @IBAction func backButtonClicked(_ sender: Any) {
-        performSegue(withIdentifier: "toCafeList", sender: nil)
-    }
+    
     @IBAction func callButton(_ sender: Any) {
         if let number = URL(string: "tel://05000000000") {
             UIApplication.shared.canOpenURL(number)
