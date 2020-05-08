@@ -12,6 +12,7 @@
 		B330BEF02460CCC000BA18FA /* SecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330BEEF2460CCC000BA18FA /* SecondaryLabel.swift */; };
 		B330BEF42460CE4C00BA18FA /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B330BEF22460CE4C00BA18FA /* Montserrat-Bold.ttf */; };
 		B330BEF52460CE4C00BA18FA /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B330BEF32460CE4C00BA18FA /* Montserrat-Regular.ttf */; };
+		B37FF54E2464D91B006906B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B37FF5502464D91B006906B8 /* Localizable.strings */; };
 		B38D72372459B4ED00E9FB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D72362459B4ED00E9FB89 /* AppDelegate.swift */; };
 		B38D723B2459B4ED00E9FB89 /* CafeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D723A2459B4ED00E9FB89 /* CafeController.swift */; };
 		B38D723E2459B4ED00E9FB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38D723C2459B4ED00E9FB89 /* Main.storyboard */; };
@@ -48,6 +49,10 @@
 		B330BEEF2460CCC000BA18FA /* SecondaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryLabel.swift; sourceTree = "<group>"; };
 		B330BEF22460CE4C00BA18FA /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		B330BEF32460CE4C00BA18FA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		B37FF54F2464D91B006906B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B37FF5512464D92B006906B8 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B37FF5572464DCC4006906B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B37FF5592464DCC8006906B8 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		B38D72332459B4ED00E9FB89 /* CafeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38D72362459B4ED00E9FB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B38D723A2459B4ED00E9FB89 /* CafeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeController.swift; sourceTree = "<group>"; };
@@ -110,6 +115,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B37FF54B2464D8EF006906B8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B37FF5502464D91B006906B8 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		B38D722A2459B4ED00E9FB89 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,7 @@
 		B38D72352459B4ED00E9FB89 /* CafeProject */ = {
 			isa = PBXGroup;
 			children = (
+				B37FF54B2464D8EF006906B8 /* Localization */,
 				B330BEF12460CE0200BA18FA /* Fonts */,
 				B330BEEB2460CC6B00BA18FA /* Controls */,
 				B38D72692459B52D00E9FB89 /* Delegate */,
@@ -286,6 +300,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = B38D722A2459B4ED00E9FB89;
 			productRefGroup = B38D72342459B4ED00E9FB89 /* Products */;
@@ -307,6 +322,7 @@
 				B330BEF52460CE4C00BA18FA /* Montserrat-Regular.ttf in Resources */,
 				B330BEF42460CE4C00BA18FA /* Montserrat-Bold.ttf in Resources */,
 				B39E769D2459B728004C2DFC /* CafeListCell.xib in Resources */,
+				B37FF54E2464D91B006906B8 /* Localizable.strings in Resources */,
 				B38D72432459B4EE00E9FB89 /* LaunchScreen.storyboard in Resources */,
 				B38D72402459B4EE00E9FB89 /* Assets.xcassets in Resources */,
 				B38D723E2459B4ED00E9FB89 /* Main.storyboard in Resources */,
@@ -377,10 +393,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B37FF5502464D91B006906B8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37FF54F2464D91B006906B8 /* en */,
+				B37FF5512464D92B006906B8 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B38D723C2459B4ED00E9FB89 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B38D723D2459B4ED00E9FB89 /* Base */,
+				B37FF5572464DCC4006906B8 /* en */,
+				B37FF5592464DCC8006906B8 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -400,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -460,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

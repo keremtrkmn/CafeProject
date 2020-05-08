@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  CafeProject
+
+  Created by Appendix on 8.05.2020.
+  Copyright © 2020 Appendix. All rights reserved.
+*/
+"Working_hours" = "Açılış: 09.00 Kapanış: 10.00";
+"Search_bar" = "Cafe ara..";
