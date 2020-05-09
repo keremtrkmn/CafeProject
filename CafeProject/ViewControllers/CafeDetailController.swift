@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CafeDetailController: UIViewController {
 
@@ -34,6 +35,7 @@ class CafeDetailController: UIViewController {
     }
     @objc func clickToPage() {
         performSegue(withIdentifier: "toWebView", sender: nil)
+        Analytics.logEvent("website_visited", parameters: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -57,6 +59,7 @@ class CafeDetailController: UIViewController {
         if let number = URL(string: "tel://05000000000") {
             UIApplication.shared.canOpenURL(number)
             UIApplication.shared.open(number, options: [:], completionHandler: nil)
+            Analytics.logEvent("call_made", parameters: nil)
         }
     }
 }
