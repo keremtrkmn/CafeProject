@@ -17,8 +17,9 @@ struct Cafe{
     var cafeWorkingHours : String
     var cafeLogo : String
     var cafeDetail : String
+    var cafeOrder : Int
     
-    init(cafeLogo: String, cafeName : String = "", cafeLocation : String = "", cafeAddress : String = "", cafePage : String = "", cafeWorkingHours : String = "", cafeDetail : String = "") {
+    init(cafeLogo: String, cafeName : String = "", cafeLocation : String = "", cafeAddress : String = "", cafePage : String = "", cafeWorkingHours : String = "", cafeDetail : String = "", cafeOrder : Int = 0) {
         self.cafeLogo = cafeLogo
         self.cafeName = cafeName
         self.cafeLocation = cafeLocation
@@ -26,6 +27,7 @@ struct Cafe{
         self.cafePage = cafePage
         self.cafeWorkingHours = cafeWorkingHours
         self.cafeDetail = cafeDetail
+        self.cafeOrder = cafeOrder
     }
     
 }

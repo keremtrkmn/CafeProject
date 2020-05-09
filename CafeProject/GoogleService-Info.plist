@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1059314251951-3hpfod7bu24dcvt593nllse9qbj7gtr7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1059314251951-3hpfod7bu24dcvt593nllse9qbj7gtr7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBs0xVNhPqA2HtjIZK3b0m2nZGxd4n8agc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1059314251951</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>appendix.CafeProject</string>
+	<key>PROJECT_ID</key>
+	<string>cafeproject-b94ee</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cafeproject-b94ee.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1059314251951:ios:925f8ef46b16f38858fc5a</string>
+	<key>DATABASE_URL</key>
+	<string>https://cafeproject-b94ee.firebaseio.com</string>
+</dict>
+</plist>

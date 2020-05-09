@@ -5,5 +5,5 @@
   Created by Appendix on 8.05.2020.
   Copyright © 2020 Appendix. All rights reserved.
 */
-"Working_hours" = "Open at: 09.00 Close at: 10.00";
+localize = "Open at: 09.00 Close at: 10.00";
 "Search_bar" = "Search cafe..";

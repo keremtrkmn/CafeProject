@@ -1,0 +1,6 @@
+framework module Pods_CafeProjectTests {
+  umbrella header "Pods-CafeProjectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
